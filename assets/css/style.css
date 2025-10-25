@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* SETUP E UTILIDADES */
+:root {
+  --clr-vermelho: #e02d2d;
+  --clr-preto: #191919;
+  --clr-branco: #eef2f5;
+  font-family: "Poppins", Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+
+  color: var(--clr-preto);
+}
+
+.links {
+  background-color: var(--clr-vermelho);
+  width: fit-content;
+
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  color: var(--clr-branco);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.links:hover {
+  transform: scale(1.03);
+}
+
+.w-100 {
+  width: 100%;
+}
+/* HEADER */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--clr-preto);
+  color: var(--clr-branco);
+  padding: 1rem 1.5rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+header h1 {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+header nav {
+  display: none;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+header nav a {
+  color: var(--clr-branco);
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/* HOME */
+
+#home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* padding-inline: 1.5rem; */
+  height: 706px;
+}
+
+.home-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.home-heading > h2 {
+  font-size: 24px;
+  line-height: 150%;
+  font-weight: 500;
+  margin: 0;
+}
+
+.home-heading > p {
+  line-height: 150%;
+  margin: 0;
+}
+
+.home-cta {
+  display: flex;
+  flex-direction: column;
+  gap: 2.8rem;
+  justify-content: center;
+  height: 400px;
+  padding-inline: 1.5rem;
+  background-repeat: no-repeat;
+  background-position: -20px;
+  background-size: 300px;
+  background-image: url("../img/Darth-IMG.png");
+}
+
+/* SOBRE */
+#sobre {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: var(--clr-preto);
+  color: var(--clr-branco);
+  padding: 2rem 1.5rem;
+}
+
+#sobre > h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 150%;
+
+  text-transform: uppercase;
+}
+
+.sobre-links {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  width: 100%;
+}
