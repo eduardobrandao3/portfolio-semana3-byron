@@ -151,3 +151,38 @@ header nav a {
   font-size: 18px;
   font-weight: 500;
 }
+
+/* Serviços e conhecimentos */
+#servicos {
+  background-color: var(--clr-preto);
+  color: var(--clr-branco);
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.base-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.base-list > li {
+  background-color: var(--clr-vermelho);
+  padding: 1rem;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 3px;
+}
+
+.servicos-list {
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.conhecimentos-list {
+  flex-wrap: wrap;
+  gap: 20px;
+}
