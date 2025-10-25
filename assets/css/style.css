@@ -45,6 +45,7 @@ section > h2 {
 
   text-transform: uppercase;
 }
+
 /* HEADER */
 header {
   display: flex;
@@ -185,4 +186,67 @@ header nav a {
 .conhecimentos-list {
   flex-wrap: wrap;
   gap: 20px;
+}
+
+/* Contato */
+#contato {
+  gap: 3rem;
+  padding-block: 5rem;
+}
+
+#contato > h2 {
+  margin: 0;
+}
+
+#contato > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+#contato > ul > li {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+#contato a {
+  color: var(--clr-preto);
+  text-decoration: none;
+}
+
+#contato > cite {
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-style: normal;
+}
+
+/* footer */
+footer {
+  background-color: var(--clr-vermelho);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--clr-preto);
+  text-align: center;
+  gap: 0.5rem;
+
+  font-size: 16px;
+  font-weight: 300;
+}
+
+footer img {
+  height: 24px;
+  padding-block: 1.5rem;
 }
