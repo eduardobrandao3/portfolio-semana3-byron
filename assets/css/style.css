@@ -77,12 +77,22 @@ header nav a {
   text-decoration: none;
 }
 
+@media screen and (min-width: 1024px) {
+  header nav {
+    display: flex;
+  }
+}
+
 /* HOME */
 
 #home {
   justify-content: center;
   padding: 0;
   height: 706px;
+}
+
+#home img {
+  display: none;
 }
 
 .home-heading {
@@ -109,6 +119,23 @@ header nav a {
   background-image: url("../img/Darth-IMG.png");
 }
 
+@media screen and (min-width: 1024px) {
+  #home {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  #home > img {
+    display: block;
+    width: 444px;
+    height: 444px;
+  }
+
+  .home-cta {
+    background-image: none;
+  }
+}
+
 /* SOBRE */
 #sobre {
   gap: 1rem;
@@ -119,14 +146,45 @@ header nav a {
 .sobre-links {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   gap: 1.5rem;
   width: 100%;
 }
 
-#sobre > img {
+.mobile-sobre > img {
   border-radius: 12px;
+  width: 100%;
 }
 
+.desktop-sobre {
+  display: none;
+}
+
+.desktop-sobre img {
+  max-width: 460px;
+}
+
+.desktop-sobre .sobre-links {
+  max-width: 460px;
+}
+@media screen and (min-width: 1024px) {
+  .mobile-sobre {
+    display: none;
+  }
+  .desktop-sobre {
+    display: flex;
+    flex-direction: row;
+    gap: 92px;
+  }
+  .sobre-left {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .desktop-sobre h2 {
+    margin: 0;
+  }
+}
 /* projetos */
 #projetos {
   gap: 1.5rem;
@@ -136,6 +194,7 @@ header nav a {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  align-items: center;
 }
 
 .card {
@@ -143,6 +202,7 @@ header nav a {
   color: var(--clr-branco);
   padding: 1.25rem;
   border-radius: 4px;
+  max-width: 200px;
 }
 
 .card > img {
@@ -153,6 +213,18 @@ header nav a {
 .card > h3 {
   font-size: 18px;
   font-weight: 500;
+}
+
+@media screen and (min-width: 1024px) {
+  #projetos {
+    align-items: center;
+  }
+  .cards-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
 
 /* Serviços e conhecimentos */
@@ -168,7 +240,7 @@ header nav a {
   display: flex;
   margin: 0;
   padding: 0;
-
+  flex-wrap: wrap;
   list-style: none;
 }
 
@@ -200,6 +272,26 @@ header nav a {
 
 .conhecimentos-list > li > img {
   width: 72px;
+}
+
+@media screen and (min-width: 1024px) {
+  #servicos {
+    flex-direction: row;
+  }
+
+  .servicos-list {
+    flex-direction: column;
+  }
+
+  #servicos > div {
+    flex-basis: 50%;
+  }
+
+  .servicos-list > li {
+    justify-content: start;
+    height: 64px;
+    max-width: 320px;
+  }
 }
 
 /* Contato */
@@ -241,6 +333,12 @@ header nav a {
   font-weight: 500;
   text-transform: uppercase;
   font-style: normal;
+}
+
+@media screen and (min-width: 1024px) {
+  #contato {
+    align-items: center;
+  }
 }
 
 /* footer */
