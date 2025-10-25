@@ -124,3 +124,7 @@ header nav a {
   gap: 1.5rem;
   width: 100%;
 }
+
+#sobre > img {
+  border-radius: 12px;
+}
